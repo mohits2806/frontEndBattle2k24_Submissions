@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 nav{
@@ -20,6 +21,13 @@ nav{
     font-size: 1.5rem;
     color: #333;
     margin-left: 20px;
+    display: flex;
+    align-items: end;
+}
+
+.head p{
+    font-size: 10px;
+    margin-bottom: 7px;
 }
 
 .navbar{
@@ -36,4 +44,77 @@ nav{
 
 .navbar li a{
     text-decoration: none;
+    color: #333;
+}
+
+.start-btn, .go-btn{
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 0px;
+    color: snow !important;
+}
+
+.go-btn{
+    border-radius: 50%;
+    padding: 10px 15px;
+}
+
+.go-btn1{
+    transition: all ease-in-out 0.2s;
+}
+
+.go-btn1:hover{
+    transform: rotate(50deg);
+}
+
+.up-btn{
+    margin: 10px 0  !important;
+}
+
+.main-container{
+    display: grid;
+    grid-template-areas: 'left right';
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 700px;
+}
+
+.side1{
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+}
+
+.side1 .main-para{
+    font-size: 1.5rem;
+    margin-left: 200px;
+}
+
+.side1 .para2{
+    text-align: left;
+}
+
+.side2{
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(imgs/image-2.webp);
+    justify-content: center;
+}
+
+marquee{
+    font-size: 10rem;
+    color: #333;
+    top: 300px;
+    position: absolute;
 }
