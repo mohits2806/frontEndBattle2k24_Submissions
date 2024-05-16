@@ -135,3 +135,11 @@ marquee{
     font-size: 2rem;
     border-radius: 50px;
 }
+
+.mid-head{
+    text-align: left;
+    font-weight:bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px 100px;
+    font-size: 10rem;
+}
