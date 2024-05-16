@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: grid;
+    grid-template-areas: 'head head head navbar';
+    align-items: center;
+    min-height: 8vh;
+    align-items: center;
+    padding: 20px;
+    background-color: snow;
+    font-family: 'Poppins', sans-serif;
+}
+
+.head{
+    grid-area: head;
+    font-size: 1.5rem;
+    color: #333;
+    margin-left: 20px;
+}
+
+.navbar{
+    grid-area: navbar;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.navbar li{
+    margin: 10px;
+    list-style: none;
+}
+
+.navbar li a{
+    text-decoration: none;
+}
